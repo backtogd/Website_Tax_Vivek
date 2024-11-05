@@ -1,0 +1,197 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8; /* Light gray background */
+}
+
+.header-image {
+    background-image: url('Yellow header.jpg'); /* Replace with your background image path */
+    background-size: cover; /* Cover the entire header */
+    background-position: center; /* Center the image */
+    color: rgb(5, 5, 5); /* Text color */
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.marquee {
+    overflow: hidden; /* Hide overflow */
+    white-space: nowrap; /* Prevent wrapping */
+    box-sizing: border-box; /* Ensure padding is included */
+    animation: marquee 10s linear infinite; /* Move text */
+    font-size: 24px; /* Adjust font size for better visibility */
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%); /* Start off to the right */
+    }
+    100% {
+        transform: translateX(-100%); /* Move to the left */
+    }
+}
+
+nav {
+    background-color: rgba(0, 150, 136, 0.8); /* Teal navigation with some transparency */
+    z-index: 1; /* Ensure nav is on top */
+    position: relative; /* Positioning context for z-index */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    position: relative;
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+nav ul li:hover > a {
+    background-color: #00796b; /* Darker teal for hover effect */
+}
+
+.dropdown {
+    display: none; /* Hide dropdown by default */
+    position: absolute;
+    background-color: #009688; /* Teal background for dropdown */
+    min-width: 200px;
+    z-index: 1;
+}
+
+nav ul li:hover .dropdown {
+    display: block; /* Show dropdown on hover */
+}
+
+.dropdown li {
+    display: block;
+}
+
+.dropdown li a {
+    padding: 10px 15px;
+}
+
+#services {
+    padding: 20px;
+    background-color: #e0f7fa; /* Light blue background for services section */
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.service-provider {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.provider-image {
+    width: 150px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Make it circular */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+.services-list {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+}
+
+.services-list li {
+    padding: 10px;
+    font-size: 18px; /* Adjust font size */
+    border-bottom: 1px solid #009688; /* Teal border for each service */
+}
+
+.services-list li:last-child {
+    border-bottom: none; /* Remove border from last item */
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+blockquote {
+    background: #e0f2f1; /* Light teal background for testimonials */
+    border-left: 5px solid #003366; /* Deep blue border */
+    margin: 20px 0;
+    padding: 10px 20px;
+}
+
+form table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+form table td {
+    padding: 10px;
+    vertical-align: top;
+}
+
+form table input,
+form table textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form table button {
+    background-color: #009688; /* Teal button */
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+form table button:hover {
+    background-color: #00796b; /* Darker teal on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #003366; /* Footer color */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+#service-provider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f9f9f9; /* Optional background color */
+}
+
+.provider-content {
+    display: flex;
+    max-width: 800px;
+    margin: auto;
+}
+
+.provider-description {
+    flex: 1; /* Allow this to take available space */
+    margin-right: 20px; /* Space between text and image */
+}
+
+.provider-image img {
+    max-width: 200px; /* Set a max width for the image */
+    border-radius: 8px; /* Optional: add some border radius */
+}
+
